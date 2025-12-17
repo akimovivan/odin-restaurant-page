@@ -1,3 +1,4 @@
+import { populateContactTab } from "./contact.js";
 import { populateHomeTab } from "./home.js";
 import { populateMenuTab } from "./menu.js";
 import "./style.css";
@@ -29,5 +30,5 @@ document.getElementById("menuBtn").addEventListener("click", (e) => {
 document.getElementById("contactBtn").addEventListener("click", (e) => {
   clearApp(app);
   e.target.className = "selected";
-  // populateSecondTab(app);
+  populateContactTab(app);
 });
